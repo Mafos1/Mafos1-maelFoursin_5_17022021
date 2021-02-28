@@ -1,4 +1,4 @@
-function getRequest() { // Execution fonction de requete
+function funRequest() { // Execution fonction de requete
 
     const fetchPick = fetch("https://oc-p5-api.herokuapp.com/api/cameras"); // Fetch de l'api
     const inputJs = document.getElementById("productContainers"); // Lien ou placer les élément html du javascript
@@ -11,7 +11,7 @@ function getRequest() { // Execution fonction de requete
                 inputJs.innerHTML += // Transformation et imbrication en HTML , et ajout des 5 spécifité des items a chaque fois jusqu'as épuisement
                     ` <div class="container col-md-12 col-lg-6 col-xl-6">
                    <div class=" product mt-5 card card-border">
-                      <img class="card-img-top" src="${imageUrl}"  alt="appareil photo vintage ${name}">
+                      <img class="card-img-top" src="${imageUrl}"  alt="appareil photo vintage">
                       <div class="card-body">
                          <h3 class="card-title">${name}</h3>
                          <h4>${price / 100}€</h4></p>                                                   
@@ -26,7 +26,8 @@ function getRequest() { // Execution fonction de requete
         });
 
 }
-getRequest(); 
+funRequest(); 
+
 
 
 
