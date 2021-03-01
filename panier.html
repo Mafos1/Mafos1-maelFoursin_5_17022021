@@ -3,26 +3,80 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style_unmin.css">
+
+    <link href="" rel="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Orinoco - Appareil photos vintage</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand fixed-top">
+        <nav class="navbar navbar-expand fixed-top navbar-light">
             <div class="collapse navbar-collapse">
                 <a href="./index.html" class="nav-item"><img src="./media/LogoO1.png" alt="Orinoco"></a>
                 <a href="./produits.html" class="nav-item nav-link">Produits</a>
                 <a href="./panier.html" class="nav-item nav-link">Panier</a>
             </div>
         </nav>
-
     </header>
-    <main>
+    <div>panier</div>
+    <table id="list"></table>
+    </div>
+    </section>
+
+    <section id="form">
+        <div class="bloc">
+            <h3>Commande</h3>
+            <div class="container bloc-lg">
+                <div class="row">
+                    <div class="col-sm-12 ">
+                        <form id="contactForm">
+
+                            <div class="formBox">
+                                <label for="lastName">Nom*</label>
+                                <input id="lastName" type="text" class="form-control" placeholder="Roi De Bretagne"
+                                    required />
+
+                                <div class="formBox">
+                                    <label for="firstName">Prénom*</label>
+                                    <input id="firstName" type="text" class="form-control" placeholder="Arthur"
+                                        required />
+
+                                </div>
+                                <div class="formBox">
+                                    <label for="email">Email*</label>
+                                    <input id="email" type="text" class="form-control"
+                                        placeholder="leSanglierDeCornouaille@kaamelott.bzh" required />
+
+                                </div>
+                                <div class="formBox">
+                                    <label for="address">Adresse*</label>
+                                    <input id="address" type="text" class="form-control"
+                                        placeholder="Kaamelott, Royaume de Logres" required />
+
+                                    <div class="formBox">
+                                        <label for="city">Ville*</label>
+                                        <input id="city" type="text" class="form-control" placeholder="Bretagne"
+                                            required />
+
+                                        </br><button id="btnSend" class="bloc-button btn btn-warning btn-block "
+                                            type="submit">Envoyer</button>
+
+                                        </br>
+                                        <p> Si vous souhaitez nous
+                                            contacter<br /><a href="mailto:contact@orinoco.com">contact@orinoco.com</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
 
     <footer>
         <img class="logobas" src="./media/logoO1.png" alt="logo">
@@ -36,6 +90,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/panier.js"></script>
+
 </body>
+
 </html>
