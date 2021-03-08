@@ -11,14 +11,13 @@ function funRequest() { // Execution fonction de requete
                 inputJs.innerHTML += // Transformation et imbrication en HTML , et ajout des 5 spécifité des items a chaque fois jusqu'as épuisement
                     ` <div class="container col-md-12 col-lg-6 col-xl-6">
                    <div class=" product mt-5 card card-border">
-                      <img class="card-img-top" src="${imageUrl}"  alt="appareil photo vintage${name}">
+                      <img class="card-img-top" src="${imageUrl}" onclick="window.location.href='produit.html?id=${_id}'" alt="appareil photo vintage${name}">
                       <div class="card-body">
                          <h2 class="card-title">${name}</h2>
                          <h3>${price / 100}€</h3>                                                 
                          <p class="card-txt">${description}</p>
                          <div class="text-center mt-5"><a><button type="button" 
-                         class="btn btn-outline-warning text-dark" 
-                         onclick="window.location.href = 'produit.html?id=${_id}'">Ajouter au panier</div> 
+                         class="btn btn-outline-warning text-dark">Ajouter au panier</div> 
                       </div> 
                    </div>
                 </div> `;

@@ -14,5 +14,7 @@ $().ready(function (){
     });
 });
 
+//! force navbar to appear if scroll is not possible !! 
+
 
 
