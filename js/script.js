@@ -1,10 +1,10 @@
 
 //! NAVBAR
-$().ready(function (){
-    $(".navbar").hide();
+document.addEventListener("DOMContentLoaded", function(e) { 
+    document.querySelectorAll(".navbar").forEach(navbar => { navbar.style.display = "none" })
     "use strict"
     $(function () {
-        $(window).scroll(function () {
+        window.addEventListener('scroll', function() {
             if ($(this).scrollTop() > 10) { 
                 $('.navbar').fadeIn(); 
             } else {
