@@ -24,9 +24,32 @@
             </div>
         </nav>
     </header>
-    <table id="list"></table>
-    </div>
+
+
+    <section class="container">
+        <div id="tableX">
+            <table class="table table-hover table-striped table-bordered table-light tableCss ">
+                <thead>
+                    <tr class="table table-warning">
+                        <th class="text-center ">Article</th>
+                        <th class="text-center">Quantité</th>
+                        <th class="text-center">Prix</th>
+                        <th class="text-center">Total</th>
+                    </tr>  
+                </thead>
+
+                <tbody id="addToBasket"></tbody>
+
+            </table>
+        </div>
+        </br></br>
+        <div class="text-center ">
+            <button class="btn btn-outline-warning text-dark" type="button" onclick="emptyBasket()">Vider le panier</button>
+            <div id="basketIsEmpty" class="text-center"></div>
+        </div>
     </section>
+
+    </br></br></br></br></br></br>
 
     <section id="form">
         <div class="bloc">
